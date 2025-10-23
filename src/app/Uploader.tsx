@@ -284,6 +284,9 @@ export const Uploader: FC<Props> = ({ handleAddProducts }) => {
                   <SelectItem key="perfect-plus" value="perfect-plus">
                     perfect-plus
                   </SelectItem>
+                  <SelectItem key="Mahavideh" value="Mahavideh">
+                    Mahavideh
+                  </SelectItem>
                 </Select>
                 <div {...getRootProps({ style })}>
                   <input {...getInputProps()} />
