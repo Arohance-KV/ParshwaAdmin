@@ -15,7 +15,7 @@ import { Product } from './types';
 import { deleteObject, getStorage, ref } from 'firebase/storage';
 
 export async function fetchAllProducts(
-  pageSize: number = 100000
+  pageSize: number = 10000
 ): Promise<{ products: Product[]; nextPage: string | null }> {
   const productsRef = collection(firestore, 'products');
   let q: Query<DocumentData>;
